@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 /*----global styling------*/
 ul {
@@ -37,13 +39,22 @@ nav {
   font-size: 1.3rem;
 }
 .nav_item {
-  margin: 0px 0.5rem;
+  margin: 0px 0.6rem;
 }
 .nav__link {
   color: white;
 }
 .social__media {
   font-size: 1.3rem;
+}
+.nav__download__btn {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #f3a953;
+  font-weight: bold;
+  color: rgb(43, 43, 43);
 }
 
 /*--------landing page--------*/
@@ -63,13 +74,60 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   height: 100%;
+  padding-left: 3rem;
 }
-.landing__page__content {
-  flex-basis: 50%;
-}
+
 .landing__page__img {
   flex-basis: 50%;
+  display: flex;
+
+  justify-content: space-between;
 }
 .landing__page__img img {
   width: 90%;
+}
+.landing__page__content {
+  flex-basis: 50%;
+  color: white;
+}
+.landing__page__content h1 {
+  font-size: 4rem;
+  line-height: 3.3rem;
+  margin: 0rem;
+  font-weight: 400;
+}
+
+.landing__page__content p {
+  font-size: 1.7rem;
+  margin: 1rem 0rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.download__btn {
+  padding: 1rem 1.5rem;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #f3a953;
+  font-weight: bold;
+  color: rgb(43, 43, 43);
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.icons div {
+  padding: 1rem;
+  background-color: #f2f3f3;
+  border-radius: 50%;
+  margin: 5px;
+  box-shadow: 0px 1px 3px 0px rgb(182, 182, 182);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons div i {
+  font-size: 1.2rem;
 }
