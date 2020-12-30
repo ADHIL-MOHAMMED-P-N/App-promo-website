@@ -13,8 +13,11 @@ a {
 }
 
 /*--------navigation--------*/
+
 nav {
   height: 70px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
 }
 
 .logo__container {
@@ -26,7 +29,7 @@ nav {
 }
 .nav__container {
   display: flex;
-  flex-wrap: wrap;
+  /*  flex-wrap: wrap; */
   justify-content: space-between;
   align-items: baseline;
   width: 95%;
@@ -43,6 +46,14 @@ nav {
 }
 .nav__link {
   color: white;
+  opacity: 0.9;
+
+  padding-bottom: 10px;
+}
+.nav__link:hover {
+  color: white;
+  opacity: 1;
+  border-bottom: 2px solid white;
 }
 .social__media {
   font-size: 1.3rem;
@@ -55,8 +66,21 @@ nav {
   background-color: #f3a953;
   font-weight: bold;
   color: rgb(43, 43, 43);
+  cursor: pointer;
+  transition: all 0.3s;
 }
-
+.nav__download__btn:hover {
+  background-color: #f38c16;
+  color: white;
+}
+.hamburger {
+  display: none;
+}
+.fa-bars {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
 /*--------landing page--------*/
 .landing__page {
   height: 600px;
@@ -78,7 +102,7 @@ nav {
 }
 
 .landing__page__img {
-  flex-basis: 50%;
+  flex-basis: 48.5%;
   display: flex;
 
   justify-content: space-between;
@@ -87,7 +111,7 @@ nav {
   width: 90%;
 }
 .landing__page__content {
-  flex-basis: 50%;
+  flex-basis: 48.5%;
   color: white;
 }
 .landing__page__content h1 {
@@ -111,6 +135,12 @@ nav {
   background-color: #f3a953;
   font-weight: bold;
   color: rgb(43, 43, 43);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.download__btn:hover {
+  background-color: #f38c16;
+  color: white;
 }
 
 .icons {
@@ -130,4 +160,50 @@ nav {
 }
 .icons div i {
   font-size: 1.2rem;
+  color: black;
+}
+
+/*-----------tablet devices-----------------------------*/
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  /*--------------nav--------------*/
+  nav {
+    height: 50px;
+  }
+  .toggle__collapse {
+    height: 55vh;
+  }
+  .nav__container {
+    flex-direction: column;
+  }
+  .navigation ul {
+    flex-direction: column;
+    padding-left: 0px;
+    align-items: center;
+  }
+  .nav_item {
+    padding-top: 1rem;
+  }
+  .hamburger {
+    display: initial;
+  }
+  .logo__container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+  }
+  /*---landing page---*/
+  .landing__page {
+    height: 550px;
+  }
+  .icons div i {
+    font-size: 1rem;
+  }
+  .icons div {
+    /*   padding: 0.5rem; */
+  }
 }
