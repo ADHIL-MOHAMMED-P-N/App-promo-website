@@ -227,16 +227,22 @@ nav {
 /*-----------mob devices-----------------------------*/
 @media only screen and (max-width: 375px) {
   html {
-    font-size: 10px;
+    font-size: 13px;
   }
   /*landing page*/
   .landing__page {
-    height: 100vh;
+    height: 90vh;
   }
   .landing__page__img {
     display: none;
   }
   .landing__page__content h1 {
     font-size: 3rem;
+  }
+  .landing__page__content {
+    flex-basis: 90%;
+  }
+  .landing__page__container {
+    padding-left: 1rem;
   }
 }
