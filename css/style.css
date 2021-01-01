@@ -166,8 +166,9 @@ nav {
 /*-----------tablet devices-----------------------------*/
 @media only screen and (max-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 13px;
   }
+
   /*--------------nav--------------*/
   nav {
     height: 50px;
@@ -197,13 +198,45 @@ nav {
     margin-top: 15px;
   }
   /*---landing page---*/
+
+  .landing__page__content h1 {
+    line-height: 4rem;
+  }
+  .background__image {
+    background-image: url(../assets/bg/tab.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+  }
   .landing__page {
     height: 550px;
+    width: 100%;
   }
+
   .icons div i {
     font-size: 1rem;
   }
-  .icons div {
-    /*   padding: 0.5rem; */
+
+  .landing__page__img .icons {
+    display: none;
+  }
+}
+
+/*-----------mob devices-----------------------------*/
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 10px;
+  }
+  /*landing page*/
+  .landing__page {
+    height: 100vh;
+  }
+  .landing__page__img {
+    display: none;
+  }
+  .landing__page__content h1 {
+    font-size: 3rem;
   }
 }
